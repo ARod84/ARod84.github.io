@@ -1,0 +1,346 @@
+/*
+Theme Name: Portfolio
+Theme URI: www.myweb.com
+Description: Sitio web personal
+Versión: 1
+Author: Araima Rodríguez
+Author URL: dirección web del autor
+*/
+
+/*--- Estilos Generales ---*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+  /*background: #55ddff;*/
+  font-size: 16pt;
+  overflow-x: hidden;
+  -webkit-transition: background .5s; /* Safari */
+  transition: background 1s;
+  background: #fff;
+}
+
+/*---Links---*/
+a:link {
+  text-decoration: none;
+  color: #fff;
+}
+a:visited {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+a:active {
+  text-decoration: none;
+  color: #fff;
+}
+
+/*---header---*/
+/*----logo fixed---*/
+.logo-out {
+  position: fixed;
+  background: linear-gradient(to top, #55ddff 0%, #CC99FF 100%);
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 1%;
+  padding-bottom: 0.5%;
+  margin: 2%;
+  color: #fff;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+/*---descripción---*/
+.description {
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 1%;
+  position: relative;
+} .description h2 {
+  font-family: 'Josefin Slab', sans-serif;
+  font-size: 4rem;
+  font-weight: 600;
+} .description h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+} .description h4 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #888;
+}
+
+/*---main content---*/
+.main-blog {
+  margin-left: 1%;
+  margin-right: 1%;
+  position: relative;
+}
+/*---logo e iconos---*/
+.logo-main {
+  width: 70%;
+  height: auto;
+  margin-top: 5%;
+  margin-left: 15%;
+}
+/*---icon set---*/
+.icon-set {
+  margin: 1%;
+  margin-top: 5%;
+  margin-left: 20%;
+  position: relative;
+}
+.icon-set  h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3rem;
+  margin-top: 15%;
+}
+.icon-main {
+  width: 18%;
+  margin: 2%;
+}
+/*---Layout---*/
+.layouts {
+  margin: 1%;
+  margin-top: 5%;
+  margin-left: 20%;
+  position: relative;
+}
+.layout-windows {
+  margin-top: 5%;
+}
+.layout-main-lg {
+  width: 98%;
+  margin: 2%;
+  border: 1px solid #ccc;
+}
+.layout-main {
+  width: 78%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 10%;
+  border: 1px solid #ccc;
+}
+.layouts h2 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 3rem;
+  margin-top: 15%;
+}
+
+/*---firma blog---*/
+.firma-blog {
+  margin-top: 25%;
+  margin-bottom: 20%;
+}
+.logo-firma {
+  width: 70%;
+}
+
+/*---Footer---*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+}
+.navbar-header .navbar-brand {
+    font-family: 'Josefin Slab', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #33ccff;
+}
+.navbar-right {
+  font-family: 'Josefin Slab', serif;
+  font-weight: 900;
+  font-size: 2rem;
+} .navbar-right li {
+    color: #fff;
+} .navbar-right li a:hover {
+  color: #33ccff;
+}
+#last {
+  color: #fff;
+}
+
+/*---Firma---*/
+.landing {
+  width: 70%;
+  height: auto;
+  position: relative;
+  background: var(--gradient1);
+  font-family: 'Indie Flower', serif;
+  font-weight: 900;
+  color: #fff;
+  margin-left: 21.5%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+/*--Animation img--*/
+.landing img {
+  width: 50%;
+  margin-top: 10%;
+  margin-left: 25%;
+  position: relative;
+}
+
+.text {
+  bottom: 40%;
+  width: 0%;
+  text-align: center;
+  font-family: 'Indie Flower', sans-serif;
+  text-decoration: overline;
+  position: absolute;
+  font-size: 4.5rem;
+  margin-left: 15%;
+  overflow: hidden;
+  animation-name: imagen,texto;
+}
+
+ .text, img {
+  -webkit-animation-name: imagen; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  animation-name: imagen;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+.text {
+  -webkit-animation-name: texto; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: 2; /* Safari 4.0 - 8.0 */
+  -webkit-animation-direction: alternate; /* Safari 4.0 - 8.0 */
+  animation-name: texto;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  animation-direction: alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes imagen {
+  0%   {left:0%; opacity:.8;}
+  100% {left:15%; opacity:1;}
+}
+/* Standard syntax */
+@keyframes imagen {
+  0%   {left:0%; opacity:.8;}
+  100% {left:15%; opacity:1;}
+}
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes texto {
+  0%   {width:0%;}
+  100% {width:30%;}
+}
+/* Standard syntax */
+@keyframes texto {
+  0%   {width:0%;}
+  100% {width:30%;}
+}
+
+/*---slides---*/
+.slide {
+  display: none;
+}
+
+#slider {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/*--planes--*/
+.plans {
+  margin: 16%;
+}
+
+/*--firma sitio2--*/
+/*---galeria poster---*/
+.galeria-poster {
+  margin-left: 25%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.slider {
+  position: relative;
+  width: 50%;
+}
+
+.gal-post {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  box-shadow: -10px -10px 30px #E3D2E2, 10px 10px 30px #E3D2E2, -10px 10px 30px #E3D2E2, 10px -10px 30px #E3D2E2;
+}
+
+.slider:hover .overlay {
+  width: 100%;
+  left: 0;
+}
+
+.gal-title {
+  margin-top: 2%;
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: 'Satisfy', serif;
+}
+
+.gal-text {
+  margin-bottom: 2%;
+  font-family: 'Sanchez', sans-serif;
+  font-size: 2rem;
+}
+
+
+/* Fading animation */
+.fade {
+  opacity: 1;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 5s;
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
