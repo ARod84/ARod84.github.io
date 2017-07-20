@@ -1,0 +1,165 @@
+
+/*Medida para minitablets*/
+@media screen and (max-width: 736px) {
+  .resume-who h1 {
+    font-size: 4rem;
+  }
+  .resume-who p  {
+    font-size: 2.5rem;
+  }
+  .resume-skills h1 {
+    font-size: 4rem;
+  }.resume-skills ul {
+    font-size: 2.5rem;
+  }
+
+  .resume-contact h1 {
+    font-size: 4rem;
+  }.resume-contact p {
+    font-size: 2.5rem;
+    margin-bottom: 25%;
+  }
+}
+
+/*--teléfonos horizontales--*/
+@media screen and (max-width: 640px) {
+  .resume-who h1 {
+    font-size: 3.5rem;
+  }
+  .resume-who p  {
+    font-size: 2.2rem;
+  }
+  .resume-skills h1 {
+    font-size: 3.5rem;
+  }.resume-skills ul {
+    font-size: 2.2rem;
+  }
+
+  .resume-contact h1 {
+    font-size: 3.5rem;
+  }.resume-contact p {
+    font-size: 2.2rem;
+    margin-bottom: 25%;
+  }
+
+  .navbar-header .navbar-brand {
+    font-size: 2.5rem;
+  }.navbar-right {
+    font-size: 2rem;
+  }
+}
+
+/*---Smartphone---*/
+@media screen and (max-width: 480px) {
+  .windows-text h4 {
+    font-size: 1.5rem;
+  }
+  .windows-text h5 {
+    font-size: 1rem;
+  }
+
+  .resume-who h1 {
+    font-size: 2rem;
+  }.resume-who p  {
+    font-size: 1.5rem;
+  }
+
+  .resume-skills h1 {
+    font-size: 2rem;
+  }.resume-skills ul {
+    font-size: 1.5rem;
+  }
+
+  .resume-contact h1 {
+    font-size: 2rem;
+  }.resume-contact p {
+    font-size: 1.5rem;
+    margin-bottom: 25%;
+  }
+
+  .navbar-header .navbar-brand {
+    display: none;
+  }.navbar-right {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+  .windows-text h4 {
+    font-size: 1.5rem;
+  }
+  .windows-text h5 {
+    font-size: 1rem;
+  }
+}
+
+/*----- Blogs -----*/
+/*---srod---*/
+@media screen and (max-width: 1024px) {
+  .description {
+    margin-left: 20%;
+  }
+  .landing {
+    margin-bottom: 20%;
+  }
+  .slide .text {
+    font-size: 2.5rem;
+  }
+  .plans h2 {
+    font-size: 2rem;
+    margin-left: 25%;
+  }
+}
+
+@media screen and (max-width: 640px){
+  .slide .text {
+    font-size: 2rem;
+  }
+  .plans h2 {
+    font-size: 1.5rem;
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .description {
+    margin-left: 0;
+  }.description h3 {
+    font-size: 2rem;
+  }.description h4 {
+    font-size: 1.5;
+  }
+  .logo-out {
+    display: none;
+  }
+  .slide .text {
+    font-size: 1.2rem;
+  }
+  .plans h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .landing {
+    display: none;
+  }
+  .layouts {
+    margin-bottom: 20%;
+  }
+}
+
+/*---CafeMacuro---*/
+
+@media screen and (max-width: 966px) {
+  .galeria-poster {
+    display: none;
+  }
+  .cafe {
+    margin-bottom: 20%;
+  }
+}
