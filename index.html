@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>AR Web Designer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300|Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="portfolio.css">
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    $(window).on('beforeunload', function() {
+      $(window).scrollTop(0);
+    });
+  </script>
+</head>
+<body>
+  <!--Header-->
+  <header>
+    <!--Portada-->
+    
+    <div class="cover">
+      <div class="inner">
+        <img class="cover-img" src="img/myNameM2.png">
+      </div>
+    </div><!--Fin de portada-->
+    <!--Animación scroll-->
+    <script>
+      $(document).ready(function(){
+          $('body').bind('mousewheel', function(e){
+              if(e.originalEvent.wheelDelta /60 > 0) {
+                  $(this).css('background', '#55ddff');
+                  $(".inner").html("<img class='cover-img' src='img/myName2.png'>");
+              } else {
+                  $(this).css('background', '#222233');
+                  $(".inner").html("<img class='cover-img' src='img/myNameM1.png'>");
+              }
+          });
+      });
+    </script><!--fin animación scroll-->
+  </header><!--Fin header-->
+  <!--Main-->
+  <div class="container col-md-12">
+    <div class="main">
+      <!--Ventanas portafolio-->
+      <div class="windows">
+        <div class="col-md-6">
+          <a href="portfolioblog2.html" target="blank"><img class="windows-img" src="img/blog-cafe1.png"></a>
+          <div class="windows-text">
+            <h4>Café macuro</h4>
+            <h5>[ CSS/Bootstrap ]</h5>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <a href="portfolioblog.html" target="blank"><img class="windows-img" src="img/window-fit2.png"></a>
+          <div class="windows-text">
+            <h4>S-Rod·FitClub</h4>
+            <h5>[ CSS/Bootstrap ]</h5>
+          </div>
+        </div>
+      </div><!--Fin ventanas portafolio-->
+    </div>
+  </div><!--Fin main-->
+
+  <div class="container col-md-12">
+    <!--Habilidades/resume-->
+    <div class="resume">
+      <div class="row">
+        <img class="resume-img" src="img/laptop.png">
+        <div class="resume-who">
+          <h1>Web Designer / Front End Developer</h1>
+          <p>Soy una diseñadora web y front end developer venezolana.
+          Me gusta desarrollar ideas genuinas e innovadoras. Ejecutar proyectos
+          enfocados a desarrollar una marca o imagen general es mi especialidad.
+          Mi meta es aportar la mayor cantidad de valor a los productos de mis
+          clientes, con vistas a lograr un impacto relevante en su empresa.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="resume-skills">
+          <h1>Mis habilidades ninja</h1>
+          <ul class="skills">
+            <li>Diseño Web</li>
+            <li>Diseño de experiencia de usuario</li>
+            <li>Identidad y marca</li>
+            <li>Interacción</li>
+            <li>CSS/Bootstrap · Javascript · Python · PHP</li>
+          </ul>
+        </div>
+
+        <div class="row">
+          <div class="resume-contact">
+            <h1>Contacto</h1>
+            <img src="img/myName3.png">
+            <p><strong>rodriguezaraima@gmail.com</strong></p>
+          </div>
+        </div>
+
+      </div>
+    </div><!--Fin habilidades/resume-->
+
+  </div>
+  <!--footer-->
+  <footer>
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Araima Rodríguez</a>
+        </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Behance</a></li>
+            <li><a href="#">GitHub</a></li>
+          </ul>
+      </div>
+    </nav>
+    <script>
+      $(document).ready(function(){
+          // hide .navbar first
+          $(".navbar").hide();
+          // fade in .navbar
+          $(function () {
+              $(window).scroll(function () {
+                   // set distance user needs to scroll before we start fadeIn
+                  if ($(this).scrollTop() > 600) {
+                      $('.navbar').fadeIn();
+                  } else {
+                      $('.navbar').fadeOut();
+                  }
+              });
+          });
+      });
+    </script>
+  </footer><!--fin footer-->
+
+</body>
+</html>
