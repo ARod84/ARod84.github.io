@@ -31,7 +31,7 @@
     <script>
       $(document).ready(function(){
           $('body').bind('mousewheel', function(e){
-              if(e.originalEvent.wheelDelta /60 > 0) {
+              if(e.originalEvent.wheelDelta /120 > 0) {
                   $(this).css('background', '#55ddff');
                   $(".inner").html("<img class='cover-img' src='img/myName2.png'>");
               } else {
