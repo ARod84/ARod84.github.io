@@ -39,6 +39,17 @@
                   $(".inner").html("<img class='cover-img' src='img/myNameM1.png'>");
               }
           });
+          if($(window).height() < 481) {
+            $('body').bind('mousewheel', function(e){
+                if(e.originalEvent.wheelDelta /480 > 0) {
+                    $(this).css('background', '#55ddff');
+                    $(".inner").html("<img class='cover-img' src='img/myName2.png'>");
+                } else {
+                    $(this).css('background', '#222233');
+                    $(".inner").html("<img class='cover-img' src='img/myNameM1.png'>");
+                }
+            });
+          }        
       });
     </script><!--fin animación scroll-->
   </header><!--Fin header-->
@@ -112,8 +123,8 @@
           <a class="navbar-brand" href="#">Araima Rodríguez</a>
         </div>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Behance</a></li>
-            <li><a href="#">GitHub</a></li>
+            <li><a href="https://www.behance.net/rodrigueza12a2">Behance</a></li>
+            <li><a href="https://github.com/ARod84">GitHub</a></li>
           </ul>
       </div>
     </nav>
