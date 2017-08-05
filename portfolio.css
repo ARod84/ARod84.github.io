@@ -18,7 +18,7 @@ body {
   overflow-x: hidden;
   -webkit-transition: background .5s; /* Safari */
   transition: background 1s;
-  background: linear-gradient(to top, #55ddff 0%, #CC99FF 100%);
+  background: #CC99FF 100%;
 }
 
 /*---header---*/
@@ -30,7 +30,8 @@ body {
 }
 
 .cover-img {
-  width: 100%;
+  margin: 0 10%;
+  width: 80%;
   height: auto;
   position: relative;
 }
@@ -66,19 +67,18 @@ body {
 .windows-text h5 {
   color: #fff;
   font-size: 2rem;
+  margin-bottom: 10%;
 }
 
 /*-----Resumé-----*/
 .resume {
   position: absolute;
   margin: 1%;
-  margin-top: 5%;
 }
 .resume-img {
-  width: 20%;
-  margin-left: 40%;
-  margin-right: 20%;
-  margin-top: 8%;
+  width: 35%;
+  margin-left: 32%;
+  margin-top: 20%;
 }
 .resume-who {
   position: relative;
@@ -116,7 +116,7 @@ body {
   font-size: 2.5rem;
   margin-left: 20%;
   margin-right: 20%;
-  margin-bottom: 6%;
+  margin-bottom: 2%;
   padding: 2%;
   text-align: center;
   list-style: none;
@@ -139,9 +139,8 @@ body {
   text-align: center;
 }
 .resume-contact img {
-  width: 60%;
-  margin-left: 19.5%;
-  opacity: .8;
+  width: 40%;
+  margin-left: 30%;
 }
 
 /*---Footer---*/
