@@ -21,10 +21,10 @@
   <!--Header-->
   <header>
     <!--Portada-->
-    
+
     <div class="cover">
       <div class="inner">
-        <img class="cover-img" src="img/myNameM1.png">
+        <img class="cover-img" src="img/trilogo.svg">
       </div>
     </div><!--Fin de portada-->
     <!--Animación scroll-->
@@ -33,23 +33,12 @@
           $('body').bind('mousewheel', function(e){
               if(e.originalEvent.wheelDelta /120 > 0) {
                   $(this).css('background', '#55ddff');
-                  $(".inner").html("<img class='cover-img' src='img/myNameM1.png'>");
+                  $(".inner").html("<img class='cover-img' src='img/trilogo.svg'>");
               } else {
                   $(this).css('background', '#222233');
-                  $(".inner").html("<img class='cover-img' src='img/myNameM1.png'>");
+                  $(".inner").html("<img class='cover-img' src='img/trilogo.svg'>");
               }
           });
-          if($(window).height() < 481) {
-            $('body').bind('mousewheel', function(e){
-                if(e.originalEvent.wheelDelta /480 > 0) {
-                    $(this).css('background', '#55ddff');
-                    $(".inner").html("<img class='cover-img' src='img/myName2.png'>");
-                } else {
-                    $(this).css('background', '#222233');
-                    $(".inner").html("<img class='cover-img' src='img/myNameM1.png'>");
-                }
-            });
-          }        
       });
     </script><!--fin animación scroll-->
   </header><!--Fin header-->
@@ -80,7 +69,7 @@
     <!--Habilidades/resume-->
     <div class="resume">
       <div class="row">
-        <img class="resume-img" src="img/laptop.png">
+        <img class="resume-img" src="img/sublogo1.svg">
         <div class="resume-who">
           <h1>Web Designer / Front End Developer</h1>
           <p>Soy una diseñadora web y front end developer venezolana.
@@ -105,8 +94,7 @@
 
         <div class="row">
           <div class="resume-contact">
-            <h1>Contacto</h1>
-            <img src="img/myName3.png">
+            <img src="img/sublogo2.svg">
             <p><strong>rodriguezaraima@gmail.com</strong></p>
           </div>
         </div>
@@ -123,8 +111,8 @@
           <a class="navbar-brand" href="#">Araima Rodríguez</a>
         </div>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="https://www.behance.net/rodrigueza12a2" target="blank">Behance</a></li>
-            <li><a href="https://github.com/ARod84" target="blank">GitHub</a></li>
+            <li><a href="#">Behance</a></li>
+            <li><a href="#">GitHub</a></li>
           </ul>
       </div>
     </nav>
