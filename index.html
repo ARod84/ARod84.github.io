@@ -21,22 +21,22 @@
   <!--Header-->
   <header>
     <!--Portada-->
-    
+
     <div class="cover">
       <div class="inner">
-        <img class="cover-img" src="img/myNameM2.png">
+        <img class="cover-img" src="img/trilogo.svg">
       </div>
     </div><!--Fin de portada-->
     <!--Animación scroll-->
     <script>
       $(document).ready(function(){
           $('body').bind('mousewheel', function(e){
-              if(e.originalEvent.wheelDelta /60 > 0) {
+              if(e.originalEvent.wheelDelta /120 > 0) {
                   $(this).css('background', '#55ddff');
-                  $(".inner").html("<img class='cover-img' src='img/myName2.png'>");
+                  $(".inner").html("<img class='cover-img' src='img/trilogo.svg'>");
               } else {
                   $(this).css('background', '#222233');
-                  $(".inner").html("<img class='cover-img' src='img/myNameM1.png'>");
+                  $(".inner").html("<img class='cover-img' src='img/trilogo.svg'>");
               }
           });
       });
@@ -44,16 +44,12 @@
   </header><!--Fin header-->
   <!--Main-->
   <div class="container col-md-12">
+
     <div class="main">
+
       <!--Ventanas portafolio-->
       <div class="windows">
-        <div class="col-md-6">
-          <a href="portfolioblog2.html" target="blank"><img class="windows-img" src="img/blog-cafe1.png"></a>
-          <div class="windows-text">
-            <h4>Café macuro</h4>
-            <h5>[ CSS/Bootstrap ]</h5>
-          </div>
-        </div>
+
         <div class="col-md-6">
           <a href="portfolioblog.html" target="blank"><img class="windows-img" src="img/window-fit2.png"></a>
           <div class="windows-text">
@@ -61,15 +57,34 @@
             <h5>[ CSS/Bootstrap ]</h5>
           </div>
         </div>
+
+        <div class="col-md-6">
+          <a href="portfolioblog2.html" target="blank"><img class="windows-img" src="img/blog-cafe1.png"></a>
+          <div class="windows-text">
+            <h4>Café macuro</h4>
+            <h5>[ CSS/Bootstrap ]</h5>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <a href="portfolioblog3.html" target="blank"><img class="windows-img" src="img/gastroport.png"></a>
+          <div class="windows-text">
+            <h4>Clínica Gastroquirúrgica</h4>
+            <h5>[ HTML5/CSS/AMP ]</h5>
+          </div>
+        </div>
+
       </div><!--Fin ventanas portafolio-->
-    </div>
-  </div><!--Fin main-->
+
+    </div><!--Fin main-->
+
+  </div>
 
   <div class="container col-md-12">
     <!--Habilidades/resume-->
     <div class="resume">
       <div class="row">
-        <img class="resume-img" src="img/laptop.png">
+        <img class="resume-img" src="img/sublogo1.svg">
         <div class="resume-who">
           <h1>Web Designer / Front End Developer</h1>
           <p>Soy una diseñadora web y front end developer venezolana.
@@ -94,8 +109,7 @@
 
         <div class="row">
           <div class="resume-contact">
-            <h1>Contacto</h1>
-            <img src="img/myName3.png">
+            <img src="img/sublogo2.svg">
             <p><strong>rodriguezaraima@gmail.com</strong></p>
           </div>
         </div>
