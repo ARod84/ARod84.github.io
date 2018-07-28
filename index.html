@@ -1,154 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>AR Web Designer</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Slab|Open+Sans+Condensed:300|Varela+Round" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="portfolio.css">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/responsive.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script>
-    $(window).on('beforeunload', function() {
-      $(window).scrollTop(0);
-    });
-  </script>
+  <meta charset="UTF-8"> 
+  <title>ARod · Development</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+  <script src="js/functions.js"></script> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Abel|Roboto|Josefin+Slab" rel="stylesheet">
 </head>
 <body>
-  <!--Header-->
-  <header>
-    <!--Portada-->
+<div class="main">
+  <div class="light">
+    <!--Seccion 1--Catalogo-->
+    <div class="catalog-wrapper">
 
-    <div class="cover">
-      <div class="inner">
-        <img class="cover-img" src="img/trilogo.svg">
+      <div class="aside">
+	<div class="btn-wrapper">
+	<div class="btn wp" onclick="displayGallery(event, 'wordpress')" id="defaultOpen">
+	    <i class="fab fa-wordpress-simple fa-3x"></i>
+	</div>
+	<p class="pwp">Wordpress</p>
+	</div>
+	<div class="btn-wrapper">
+	<div class="btn oc" onclick="displayGallery(event, 'october')">
+	    <i class="fas fa-leaf fa-3x"></i>
+	</div>
+	<p class="oct">October</p>
+	</div>
+	<div class="btn-wrapper">
+        <div class="btn woo" onclick="displayGallery(event, 'woocommerce')">
+	    <i class="fas fa-shopping-cart fa-3x"></i>
+	</div>
+	<p class="wooc">Woocommerce</p>
+	</div>
+	<div class="btn-wrapper">
+	<div class="btn sn" onclick="displayGallery(event, 'snippets')">
+	    <i class="far fa-file-code fa-3x"></i>
+	</div>
+	<p class="snp">Snippets</p>
+	</div>
       </div>
-    </div><!--Fin de portada-->
-    <!--Animación scroll-->
-    <script>
-      $(document).ready(function(){
-          $('body').bind('mousewheel', function(e){
-              if(e.originalEvent.wheelDelta /120 > 0) {
-                  $(this).css('background', '#55ddff');
-                  $(".inner").html("<img class='cover-img' src='img/trilogo.svg'>");
-              } else {
-                  $(this).css('background', '#222233');
-                  $(".inner").html("<img class='cover-img' src='img/trilogo.svg'>");
-              }
-          });
-      });
-    </script><!--fin animación scroll-->
-  </header><!--Fin header-->
-  <!--Main-->
-  <div class="container col-md-12">
 
-    <div class="main">
+      <div class="catalog">
 
-      <!--Ventanas portafolio-->
-      <div class="windows">
+	<!--Galleries-->
+	<div id="wordpress" class="galcontent">
 
-        <div class="col-md-6">
-          <a href="portfolioblog.html" target="blank"><img class="windows-img" src="img/window-fit2.png"></a>
-          <div class="windows-text">
-            <h4>S-Rod·FitClub</h4>
-            <h5>[ CSS/Bootstrap ]</h5>
-          </div>
-        </div>
+            <div class="slideshow-container">
+		<div class="mySlides fade">
+		<svg viewBox="0 0 500 200" style="position:absolute;">
+		<path id="maker" d="
+			M 90, 70
+			C 100,70	  
+			  185,15	  
+			  285,22" style="fill:transparent;"/>
+		<text class="text maker" width="100">
+		    <textPath alignment-baseline="top" xlink:href="#maker">
+			<a href="maker.html">4youmaker</a>
+		    </textPath>
+		</svg>
+		       <img src="img/gal-4you.png">
 
-        <div class="col-md-6">
-          <a href="portfolioblog2.html" target="blank"><img class="windows-img" src="img/blog-cafe1.png"></a>
-          <div class="windows-text">
-            <h4>Café macuro</h4>
-            <h5>[ CSS/Bootstrap ]</h5>
-          </div>
-        </div>
+		</div>
+		<div class="mySlides fade">
+		<svg viewBox="0 0 500 200" style="position:absolute;">
+		<path id="canvas" d="
+			M 85, 73
+			C 85,76	  
+			  190,20	  
+			  275,16" style="fill:transparent;"/>
+		<text class="text canvas" width="100">
+		    <textPath alignment-baseline="top" xlink:href="#canvas" style="font-size:18px;">
+			<a href="canvas.html">Canvas·Dodo</a>
+		    </textPath>
+		</svg>
+		       <img src="img/gal-canvas.png">
+		</div>
+		<div class="mySlides fade">
+		<svg viewBox="0 0 500 200" style="position:absolute;">
+		<path id="gastro" d="
+			M 85,73
+			C 85,78	  
+			  185,20	  
+			  275,16" style="fill:transparent;"/>
+		<text class="text gastro" width="100">
+		    <textPath alignment-baseline="top" xlink:href="#gastro" style="font-size:16px;">
+			<a href="clinica.html">Clínica·Gastro</a>
+		    </textPath>
+		</svg>
+		       <img src="img/gal-gastro.png">
+		</div>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    </div>
 
-        <div class="col-md-6">
-          <a href="portfolioblog3.html" target="blank"><img class="windows-img" src="img/gastroport.png"></a>
-          <div class="windows-text">
-            <h4>Clínica Gastroquirúrgica</h4>
-            <h5>[ HTML5/CSS/AMP ]</h5>
-          </div>
-        </div>
+	</div>
+	<!--Galeria October-->
+	<div id="october" class="galcontent">
 
-      </div><!--Fin ventanas portafolio-->
+            <div class="slideshow-container">
+		<div class="mySlidesOct fade">
+		<svg viewBox="0 0 500 200" style="position:absolute;">
+		<path id="macuro" d="
+			M 85, 73
+			C 85,76	  
+			  190,20	  
+			  275,16" style="fill:transparent;"/>
+		<text class="text canvas" width="100">
+		    <textPath alignment-baseline="top" xlink:href="#macuro" style="font-size:18px;">
+			<a href="cafe_macuro.html">Café·Macuro</a>
+		    </textPath>
+		</svg>
+                	<img src="img/gal-canvas.png" />
+	        </div>
+		<div class="mySlidesOct fade">
+		<svg viewBox="0 0 500 200" style="position:absolute;">
+		<path id="sara" d="
+			M 85,73
+			C 85,78	  
+			  185,20	  
+			  275,16" style="fill:transparent;"/>
+		<text class="text gastro" width="100">
+		    <textPath alignment-baseline="top" xlink:href="#sara" style="font-size:18px;">
+			<a href="srod.html">SRod·FitClub</a>
+		    </textPath>
+		</svg>
+		       <img src="img/gal-srod.png">
+		</div>
+		<a class="next" onclick="plusSlidesOct(1)">&#10095;</a>
+		<a class="prev" onclick="plusSlidesOct(-1)">&#10094;</a>
+	    </div>
 
-    </div><!--Fin main-->
-
+	</div><!--Galeria October-->
+	<div id="woocommerce" class="galcontent">
+		<svg viewBox="0 0 500 200" style="position:absolute;">
+		<path id="checkout" d="
+			M 85,73
+			C 85,78	  
+			  185,20	  
+			  275,16" style="fill:transparent;"/>
+		<text class="text code" width="100">
+		    <textPath alignment-baseline="top" xlink:href="#checkout" style="font-size:21px;">
+			<a href="checkout.html">Checkout</a>
+		    </textPath>
+		</svg>
+            <img src="img/gal-woo.png" />
+	</div>
+	<div id="snippets" class="galcontent">
+		<svg viewBox="0 0 500 200" style="position:absolute;">
+		<path id="code" d="
+			M 105,63
+			C 105,68	  
+			  205,10  
+			  295,6" style="fill:transparent;"/>
+		<text class="text code" width="100">
+		    <textPath alignment-baseline="top" xlink:href="#code" style="font-size:24px;">
+			<a href="https://codepen.io/arod84/">Code</a>
+		    </textPath>
+		</svg>
+            <img src="img/gal-sni.png" />
+        </div><!--Galleries-->
+      </div>
+    </div>
+  </div><!--Seccion 1--Catalogo-->
+  <!--Sección 2-->	
+  <div class="description">
   </div>
+  <nav>
+    <table class="navbar-links">
+      <tr>
+        <td class="right"><a href="#">Araima Rodríguez</a></td>
+        <td class="left"><a href="https://www.behance.net/rodrigueza12a2">Behance</a></td>
+        <td class="left"><a href="https://github.com/ARod84">GitHub</a></td>
+      <tr>
+    </table>
+  </nav>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
 
-  <div class="container col-md-12">
-    <!--Habilidades/resume-->
-    <div class="resume">
-      <div class="row">
-        <img class="resume-img" src="img/sublogo1.svg">
-        <div class="resume-who">
-          <h1>Web Designer / Front End Developer</h1>
-          <p>Soy una diseñadora web y front end developer venezolana.
-          Me gusta desarrollar ideas genuinas e innovadoras. Ejecutar proyectos
-          enfocados a desarrollar una marca o imagen general es mi especialidad.
-          Mi meta es aportar la mayor cantidad de valor a los productos de mis
-          clientes, con vistas a lograr un impacto relevante en su empresa.</p>
-        </div>
-      </div>
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-      <div class="row">
-        <div class="resume-skills">
-          <h1>Mis habilidades ninja</h1>
-          <ul class="skills">
-            <li>Diseño Web</li>
-            <li>Diseño de experiencia de usuario</li>
-            <li>Identidad y marca</li>
-            <li>Interacción</li>
-            <li>CSS/Bootstrap · Javascript · Python · PHP</li>
-          </ul>
-        </div>
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-        <div class="row">
-          <div class="resume-contact">
-            <img src="img/sublogo2.svg">
-            <p><strong>rodriguezaraima@gmail.com</strong></p>
-          </div>
-        </div>
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block";  
+}
 
-      </div>
-    </div><!--Fin habilidades/resume-->
+//Galeria October
+var slideIndexOct = 1;
+showSlidesOct(slideIndexOct);
 
-  </div>
-  <!--footer-->
-  <footer>
-    <nav class="navbar navbar-default navbar-fixed-bottom">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Araima Rodríguez</a>
-        </div>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Behance</a></li>
-            <li><a href="#">GitHub</a></li>
-          </ul>
-      </div>
-    </nav>
-    <script>
-      $(document).ready(function(){
-          // hide .navbar first
-          $(".navbar").hide();
-          // fade in .navbar
-          $(function () {
-              $(window).scroll(function () {
-                   // set distance user needs to scroll before we start fadeIn
-                  if ($(this).scrollTop() > 600) {
-                      $('.navbar').fadeIn();
-                  } else {
-                      $('.navbar').fadeOut();
-                  }
-              });
-          });
-      });
-    </script>
-  </footer><!--fin footer-->
+function plusSlidesOct(n) {
+  showSlidesOct(slideIndexOct += n);
+}
+
+function currentSlideOct(n) {
+  showSlidesOct(slideIndexOct = n);
+}
+
+function showSlidesOct(n) {
+  var i;
+  var slidesOct = document.getElementsByClassName("mySlidesOct");
+  if (n > slidesOct.length) {slideIndexOct = 1}    
+  if (n < 1) {slideIndexOct = slidesOct.length}
+  for (i = 0; i < slidesOct.length; i++) {
+      slidesOct[i].style.display = "none";  
+  }
+  slidesOct[slideIndexOct-1].style.display = "block";  
+}
+
+function displayGallery(evt, gal) {
+    var i, galcontent, tablinks;
+    galcontent = document.getElementsByClassName("galcontent");
+    for (i = 0; i < galcontent.length; i++) {
+        galcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("btn");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(gal).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+document.getElementById("defaultOpen").click();
+
+</script>
 
 </body>
 </html>

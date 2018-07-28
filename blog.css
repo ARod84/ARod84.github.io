@@ -1,10 +1,5 @@
 /*
-Theme Name: Portfolio
-Theme URI: www.myweb.com
-Description: Sitio web personal
-Versión: 1
-Author: Araima Rodríguez
-Author URL: dirección web del autor
+*--Estilos páginas internas---
 */
 
 /*--- Estilos Generales ---*/
@@ -54,21 +49,24 @@ a:active {
 
 /*---descripción---*/
 .description {
+  margin-top: 20px;
   font-family: 'Open Sans Condensed', sans-serif;
+  color: #666;
   padding: 1%;
-  position: relative;
-} .description h2 {
-  font-family: 'Josefin Slab', sans-serif;
-  font-size: 4rem;
-  font-weight: 600;
-} .description h3 {
-  font-size: 2.5rem;
-  font-weight: 500;
-} .description h4 {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #888;
-}
+  position: relative;} 
+  .description h2 {
+    font-family: 'Josefin Slab', sans-serif;
+    font-size: 4rem;
+    font-weight: 600;}
+  .description h3 {
+    font-size: 2.5rem;
+    font-weight: 500;}
+  .description h4 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #aaa;}
+  .description p a {
+    font-size: 2rem;}
 
 /*---main content---*/
 .main-blog {
@@ -80,51 +78,54 @@ a:active {
 .logo-main {
   width: 70%;
   height: auto;
-  margin-top: 5%;
+  margin-top: 0;
   margin-left: 15%;
 }
 /*---icon set---*/
+.layouts,
 .icon-set {
-  margin: 1%;
-  margin-top: 5%;
-  margin-left: 20%;
+  margin: 40px 0 20px 220px;
   position: relative;
 }
+
+.layouts h2,
 .icon-set  h2 {
   font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 3rem;
-  margin-top: 15%;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: 10px;
+  margin-right: 100px;
+  color: #aaa;
+  border-bottom: 1px solid #eee;
 }
+
+.icon-set p {
+  font-size: 10px;
+  color: #aaa;
+}
+
 .icon-main {
-  width: 18%;
+  width: 16%;
   margin: 2%;
 }
-/*---Layout---*/
-.layouts {
-  margin: 1%;
-  margin-top: 5%;
-  margin-left: 20%;
-  position: relative;
+
+.icons-img {
+  text-align: center;
 }
+
+/*---Layout---*/
 .layout-windows {
-  margin-top: 5%;
+  margin-top: 20px;
 }
 .layout-main-lg {
-  width: 98%;
-  margin: 2%;
+  width: 100%;
+  margin: 0 0 40px 10px;
   border: 1px solid #ccc;
 }
 .layout-main {
   width: 78%;
-  margin-left: 2%;
-  margin-right: 2%;
-  margin-top: 10%;
+  margin: 0 0 40px 10px;
   border: 1px solid #ccc;
-}
-.layouts h2 {
-  font-family: 'Open Sans Condensed', sans-serif;
-  font-size: 3rem;
-  margin-top: 15%;
 }
 
 /*---firma blog---*/
@@ -134,30 +135,6 @@ a:active {
 }
 .logo-firma {
   width: 70%;
-}
-
-/*---Footer---*/
-.navbar {
-  background-color: rgba(0, 0, 0, 0.1);
-  border: none;
-}
-.navbar-header .navbar-brand {
-    font-family: 'Josefin Slab', serif;
-    font-size: 3rem;
-    font-weight: 900;
-    color: #33ccff;
-}
-.navbar-right {
-  font-family: 'Josefin Slab', serif;
-  font-weight: 900;
-  font-size: 2rem;
-} .navbar-right li {
-    color: #fff;
-} .navbar-right li a:hover {
-  color: #33ccff;
-}
-#last {
-  color: #fff;
 }
 
 /*---Firma---*/
@@ -324,7 +301,7 @@ a:active {
   margin: auto;
 }
 
-.prev, .next {
+.prev-sl, .next-sl {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -339,7 +316,7 @@ a:active {
 }
 
 /* Position the "next button" to the right */
-.next {
+.next-sl {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
@@ -447,4 +424,100 @@ a:active {
   0%   {opacity: 0;top: 200px;}
   20%  {opacity: 1;top: -5px;}
   100% {opacity: 1;top: -5px;}
+}
+
+/*---4YOUMAKER---*/
+.maker-icon {
+  cursor: pointer;
+  color: #433e5f;
+  padding: 40px 0 40px 0;
+  border:2px solid #68609c;
+  border-radius: 8px;
+}
+
+.maker-icon:hover {
+  color: #fff;
+  border:2px solid #68609c;
+  background-color: #433e5f;
+}
+
+.spin {
+  border: none;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 1000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 1000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  -o-transition: rotate(3600deg);
+}
+
+.spin:hover {
+  color: #68609c;
+  background: transparent;
+  border: none;
+}
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@-ms-keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+@-o-keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+/*---Footer---*/
+
+.navbar-links {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  font-family: 'Josefin Slab', serif;
+  font-size: 1.4em;
+  font-weight: 900;
+  color: #33ccff;
+  padding: 5px;
+  vertical-align: middle;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  bottom:0;
+}
+.navbar-links td a {
+  color: #33ccff;
+  display: inline-block;
+}
+.right {
+  width: 70%;
+
+}
+.navbar-links td.right a {
+  margin-left: 20px;
+}
+.navbar-links td.left a {
+  color: #aaa;
+}
+
+.navbar-links td.left a:hover {
+  color: #fff;
 }
