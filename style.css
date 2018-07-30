@@ -302,7 +302,7 @@ img {vertical-align: middle;}
 
 
 /*---Animations---*/
-/*@keyframes iconB {
+@keyframes iconB {
     0% {text-shadow:
 	   -1px -1px 0 #FF2FD1,  
 	    1px -1px 0 #966ce0,
@@ -323,5 +323,5 @@ img {vertical-align: middle;}
 	    1px -1px 0 #8A41C7,
 	   -1px 1px 0 #8A41C7,
 	    1px 1px 0 #FF2FD1;}
-}*/
+}
 
