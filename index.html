@@ -1,246 +1,498 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8"> 
-  <title>ARod · Development</title>
-  <link rel="stylesheet" type="text/css" href="style.css" />
-  <link rel="stylesheet" type="text/css" href="css/reset.css" />
-  <link rel="stylesheet" type="text/css" href="css/responsive.css" />
-  <script src="js/functions.js"></script> 
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Abel|Roboto|Josefin+Slab" rel="stylesheet">
-</head>
-<body>
-<div class="main">
-  <div class="light">
-    <!--Seccion 1--Catalogo-->
-    <div class="catalog-wrapper">
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Website Title -->
+    <title>Araima Rodríguez | Web Developer</title>
+    <!-- Bootstrap -->
+    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Font-Awesome -->
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Lightbox -->
+	<link href="assets/lightbox/css/lightbox.css" rel="stylesheet">
+    <!-- Text Rotator-->
+	<link href="assets/textrotator/simpletextrotator.css" rel="stylesheet">
+	<!-- FlexSlider -->
+    <link href="assets/flexslider/flexslider.css" rel="stylesheet">
+	<!-- Theme Style -->
+    <link href="css/style.css" rel="stylesheet">
+	<!-- Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+	<!-- Custom Favicon -->
+	<link href="img/favicon.svg" rel="shortcut icon" type="image/x-icon" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="assets/html5shiv/html5shiv.js"></script>
+    <script src="assets/respond/respond.min.js"></script>
+    <![endif]-->
+  </head>
+    <body id="top">
 
-      <div class="aside">
-	<div class="btn-wrapper">
-	<div class="btn wp" onclick="displayGallery(event, 'wordpress')" id="defaultOpen">
-	    <i class="fab fa-wordpress-simple fa-3x"></i>
-	</div>
-	<p class="pwp">Wordpress</p>
-	</div>
-	<div class="btn-wrapper">
-	<div class="btn oc" onclick="displayGallery(event, 'october')">
-	    <i class="fas fa-leaf fa-3x"></i>
-	</div>
-	<p class="oct">October</p>
-	</div>
-	<div class="btn-wrapper">
-        <div class="btn woo" onclick="displayGallery(event, 'woocommerce')">
-	    <i class="fas fa-shopping-cart fa-3x"></i>
-	</div>
-	<p class="wooc">Woocommerce</p>
-	</div>
-	<div class="btn-wrapper">
-	<div class="btn sn" onclick="displayGallery(event, 'snippets')">
-	    <i class="far fa-file-code fa-3x"></i>
-	</div>
-	<p class="snp">Snippets</p>
-	</div>
-      </div>
+      <!-- ****************************** Preloader ************************** -->
+      <div id="preloader"></div>
 
-      <div class="catalog">
 
-	<!--Galleries-->
-	<div id="wordpress" class="galcontent">
+	  	<!-- ==========================
+        HEADER SECTION
+        =========================== -->
+        <header id="home">
+		    <!-- creative menu -->
+            <div class="container-fluid">
+              <div class="row">
+                <div class="menu-wrap">
+				<nav class="menu">
+				    <!-- Menu Links -->
+					<div class="icon-list">
+						<a href="index.html#home"><i class="fa fa-fw fa-home"></i><span>Inicio</span></a>
+						<a href="index.html#about"><i class="fa fa-fw fa-quote-left"></i><span>Acerca de mí</span></a>
+						<a href="index.html#service"><i class="fa fa-fw fa-globe"></i><span>Servicios</span></a>
+						<a href="index.html#portfolio"><i class="fa fa-fw fa-picture-o"></i><span>Portafolio</span></a>
+						<a href="index.html#contact"><i class="fa fa-fw fa-envelope-o"></i><span>Contacto</span></a>
+					</div>
+				</nav>
+			    </div>
+			    <button class="menu-button" id="open-button"></button><!-- menu button -->
+              </div><!--/row-->
+            </div><!--/container-->
+		  <!-- Header Image -->
+          <section class="hero" id="hero">
+            <div class="container">
+			  <!-- Slider Button (don't edit!)-->
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="index.html#"><span></span></a>
+                </div>
+              </div>
+			  <!-- HEADER HEADLINE -->
+              <div class="row">
+                <div class="col-md-8 col-md-offset-1 inner">
+                  <h1 class="animated fadeInDown">
+                    Ara<span style="color:#FFF;">ima</span><br/>
+                    <span>R<span style="color:#FFF">odrí</span>guez</span>
+                  </h1><!-- Title -->
+                  <h3 class="animated fadeInUp delay-05s"><span class="rotate">Web Developer</span></h3><!-- Text Rotator -->
+                </div>
+              </div>
+			  <!-- Learn More Button -->
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <a href="index.html#about" class="scrollto wow fadeInUp delay-5s ">
+			            <p>Ver más</p>
+			            <p class="scrollto--arrow"><img src="img/scroll-down.png" alt="scroll down arrow"></p>
+			        </a>
+                </div>
+              </div>
+            </div>
+          </section>
+		  <!-- Header Image End -->
+        </header>
+		<!-- ==========================
+        HEADER SECTION END
+        =========================== -->
 
-            <div class="slideshow-container">
-		<div class="mySlides fade">
-		<svg viewBox="0 0 500 200" style="position:absolute;">
-		<path id="maker" d="
-			M 90, 70
-			C 100,70	  
-			  185,15	  
-			  285,22" style="fill:transparent;"/>
-		<text class="text maker" width="100">
-		    <textPath alignment-baseline="top" xlink:href="#maker">
-			<a href="maker.html">4youmaker</a>
-		    </textPath>
-		</svg>
-		       <img src="img/gal-4you.png">
 
+
+
+		<!-- ==========================
+        ABOUT SECTION
+        =========================== -->
+        <section class="intro text-center section-padding color-bg" id="about">
+          <div class="container">
+		    <!-- WELCOME TEXT -->
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">Un poco <span>sobre</span> mí</h1><!-- Headline -->
+				<!-- about / welcome text -->
+                <p>Empecé en el desarrollo web en el mundo del trabajo freelance. HTML5/CSS y JavaScript forman parte de mis core skills.
+                   También puedo implementar soluciones de backend con PHP y Python, así como desarrollar proyectos en WordPress, Woocommerce y Drupal.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+<!-- ==========================
+        SERVICE SECTION
+        =========================== -->
+        <section class="features text-center section-padding" id="service">
+          <div class="container">
+        <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">¿Qué puedo hacer para tu empresa?</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+          <div class="services">
+          <!-- Service Box 1 -->
+                  <div class="col-md-4 wp2 item">
+                    <div class="icon">
+                      <i class="fa fa-camera"></i><!-- Icon -->
+                    </div>
+                    <h2>Desarrollo Frontend</h2><!-- Title -->
+                    <p>Siempre preocupada por el aprendizaje constante de las mejores tecnologías, para obtener interfaces que cumplan con los requerimientos estéticos y de rendimiento.</p><!-- Description -->
+                  </div>
+          <!-- Service Box 2 -->
+                  <div class="col-md-4 wp2 item delay-05s">
+                    <div class="icon">
+                      <i class="fa fa-desktop"></i><!-- Icon -->
+                    </div>
+                    <h2>Diseño Web</h2><!-- Title -->
+                    <p>Implementación de las técnicas de diseño y experiencia de usuario adecuadas a el sitio web de su empresa. Mi meta es lograr un diseño usable, interactivo y adaptado a la imagen corporativa.</p><!-- Description -->
+                  </div>
+          <!-- Service Box 3 -->
+                  <div class="col-md-4 wp2 item delay-1s">
+                    <div class="icon">
+                      <i class="fa fa-cubes"></i><!-- Icon -->
+                    </div>
+                    <h2>Soluciones de Backend</h2><!-- Title -->
+                    <p>Python y PHP me permiten acceder y crear código para distintas plataformas, realizar labores de mantenimiento, además de estar consciente de las necesidades del resto del equipo.</p><!-- Description -->
+                  </div>
+          </div>
+                  <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+		<div class="container-fluid">
+		    <!-- About 1 -->
+			<div class="row color-bg">
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/frontend.png)"></div><!-- about image 1 -->
+				</div>
+				<div class="col-md-6 about-text">
+					<h6>Desarrollo Frontend</h6><!-- headline-->
+					<p>En la <a href="#">Fabrica Online</a> he desarrollado la mayor parte de mis proyectos de frontend, siendo los sitios web de <a href="#">Imprenta Maral</a>, <a href="#">MPG Packaging</a> y <a href="#">Conecta Home</a> los más recientes.</p><br><br><!-- About Text 1 -->
+					<a href="index.html#portfolio" class="weight-outline-btn">Ver más</a><!-- read more button  -->
+				</div>
+			</div>
+			<!-- About 2 -->
+			<div class="row">
+				<div class="col-md-6 about-text">
+					<h6>Diseño Web</h6><!-- Headline -->
+					<p>En algunas ocasiones clientes con pequeñas empresas necesitan una solución integral para sus sitios, que incluyan el diseño y el desarrollo. Dos de esos casos han sido <a href="#">Okin Sport</a> y <a href="#">4YouMaker</a></p><br><br><!-- About Text 2 -->
+					<a href="index.html#portfolio" class="weight-outline-btn">Ver más</a>	<!-- read more button  -->
+				</div>
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/backend.png)"></div><!-- about image 2 -->
+				</div>
+			</div>
+			<!-- About 3 -->
+			<div class="row color-bg">
+				<div class="col-md-6 nopadding features-intro-img">
+					<div class="about-image" style="background-image:url(img/soluciones.png)"></div><!-- about image 3 -->
+				</div>
+				<div class="col-md-6 about-text">
+					<h6>Soluciones de Backend</h6><!-- Headline-->
+					<p>Constantemente estoy realizando labores de mantenimiento y desarrollo constante para mis clientes, de manera de mantener sus sitios webs actualizados, seguros y sin tiempos de caída.</p><br><br><!-- About Text 3 -->
+					<a href="index.html#portfolio" class="weight-outline-btn">Ver más</a><!-- read more button  -->
+				</div>
+			</div>
 		</div>
-		<div class="mySlides fade">
-		<svg viewBox="0 0 500 200" style="position:absolute;">
-		<path id="canvas" d="
-			M 85, 73
-			C 85,76	  
-			  190,20	  
-			  275,16" style="fill:transparent;"/>
-		<text class="text canvas" width="100">
-		    <textPath alignment-baseline="top" xlink:href="#canvas" style="font-size:18px;">
-			<a href="canvas.html">Canvas·Dodo</a>
-		    </textPath>
-		</svg>
-		       <img src="img/gal-canvas.png">
+		<!-- ==========================
+        ABOUT SECTION END
+        =========================== -->
+
+
+
+
+		<!-- ==========================
+        PORTFOLIO SECTION
+    =========================== -->
+        <section class="swag text-center" id="portfolio">
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <h1 class="arrow">
+                Proyectos <span>Recientes</span>
+              </h1>
+            </div>
+          </div>
+        </section>
+
+        <div class="container">
+          <div class="row row-offset-0">
+
+          <!-- PORTFOLIO ITEM 1 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-01-large.jpg" data-lightbox="roadtrip" title="Proyecto - Okin Sport | okinsport.com"><img class="grayscale" src="img/portfolio/portfolio-01-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+
+  	    <!-- PORTFOLIO ITEM 2 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-02-large.jpg" data-lightbox="roadtrip" title="Proyecto - Imprenta Maral | maral-ig.com"><img class="grayscale" src="img/portfolio/portfolio-02-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+
+  		<!-- PORTFOLIO ITEM 3 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-03-large.jpg" data-lightbox="roadtrip" title="Proyecto - MPG Packaging | mpgpackaging.es"><img class="grayscale" src="img/portfolio/portfolio-03-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+
+  		<!-- PORTFOLIO ITEM 4 -->
+          <div class="col-md-3 col-sm-6 ">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-04-large.jpg" data-lightbox="roadtrip" title="Proyecto - Albert Rodríguez | albertmrodriguez.com"><img class="grayscale" src="img/portfolio/portfolio-04-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+
+          <!-- PORTFOLIO ITEM 5 -->
+          <div class="col-md-3 col-sm-6 ">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-05-large.jpg" data-lightbox="roadtrip" title="Proyecto - 4YouMaker Pro | pro.4youmaker.com"><img class="grayscale" src="img/portfolio/portfolio-05-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+
+  	    <!-- PORTFOLIO ITEM 6 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-06-large.jpg" data-lightbox="roadtrip" title="Proyecto - 4YouMaker | 4youmaker.com"><img class="grayscale" src="img/portfolio/portfolio-06-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+
+  		<!-- PORTFOLIO ITEM 7 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-07-large.jpg" data-lightbox="roadtrip" title="Proyecto (en desarrollo)- Conecta Home | conectahome.fabricaonline.es"><img class="grayscale" src="img/portfolio/portfolio-07-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+
+  		<!-- PORTFOLIO ITEM 8 -->
+          <div class="col-md-3 col-sm-6">
+              <div class="overlay-effect effects clearfix">
+                  <div class="img">
+                      <a href="img/portfolio/portfolio-08-large.jpg" data-lightbox="roadtrip" title="Proyecto - CanvasDodo Italia | italia.canvasdodo.com"><img class="grayscale" src="img/portfolio/portfolio-08-thumbnail.jpg" alt="Portfolio Item"></a>
+                  </div>
+              </div>
+          </div>
+  	    <!-- PORTFOLIO ITEM END -->
+        </div><!--/row-->
+      </div><!--/.container-->
+		<!-- ==========================
+        PORTFOLIO SECTION END
+        =========================== -->
+
+
+
+
+		<!-- ==========================
+        CUSTOM SPACER
+        =========================== -->
+		<div class="spacer-cta text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <a href="index.html#contact" class="outline-btn">Contratar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+		<!-- ==========================
+        CUSTOM SPACER END
+        =========================== -->
+
+
+
+
+		<!-- ==========================
+        CLIENT SECTION
+        =========================== -->
+		<div class="container-fluid">
+			<div class="row color-bg">
+				<!-- Left Image -->
+				<div class="col-md-6 nopadding features-intro-img wow fadeInLeft">
+					<div class="about-image clients" style="background-image:url(img/clientes.png)"></div>
+				</div>
+				<!-- Clients / Testimonials -->
+				<div class="col-md-6 nopadding about-text">
+				<h6>Lo que dicen nuestros clientes</h6>
+					<div id="clientSlider">
+					   <ul class="slides">
+					       <li><p>"Su nivel de respuesta y solución de problemas es perfecto, la recomiendo 100%  y ahora será mi diseñadora de ayuda de cabecera."<br>	<small>- Katiuska Flores, Black Creative Box</small></p></li>
+						     <li><p>"Estoy muy satisfecho con el trabajo se ha adaptado a todas mis necesidades espero seguir trabajando con ella" <br>	<small>- José A. Redondo, 4YouMaker</small></p></li>
+                 <li><p>"Muy buena disposición, cumple con las expectativas. No sólo la recomendaria sino que, además, me gustaría continuar trabajando con ella a futuro." <br>	<small>- Antonio Machado, Quality Assist</small></p></li>
+					   </ul>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div class="mySlides fade">
-		<svg viewBox="0 0 500 200" style="position:absolute;">
-		<path id="gastro" d="
-			M 85,73
-			C 85,78	  
-			  185,20	  
-			  275,16" style="fill:transparent;"/>
-		<text class="text gastro" width="100">
-		    <textPath alignment-baseline="top" xlink:href="#gastro" style="font-size:16px;">
-			<a href="clinica.html">Clínica·Gastro</a>
-		    </textPath>
-		</svg>
-		       <img src="img/gal-gastro.png">
-		</div>
-		<a class="next" onclick="plusSlides(1)">&#10095;</a>
-		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	    </div>
+		<!-- ==========================
+        CLIENTS SECTION END
+        =========================== -->
 
-	</div>
-	<!--Galeria October-->
-	<div id="october" class="galcontent">
 
-            <div class="slideshow-container">
-		<div class="mySlidesOct fade">
-		<svg viewBox="0 0 500 200" style="position:absolute;">
-		<path id="macuro" d="
-			M 85, 73
-			C 85,76	  
-			  190,20	  
-			  275,16" style="fill:transparent;"/>
-		<text class="text canvas" width="100">
-		    <textPath alignment-baseline="top" xlink:href="#macuro" style="font-size:18px;">
-			<a href="cafe_macuro.html">Café·Macuro</a>
-		    </textPath>
-		</svg>
-                	<img src="img/gal-canvas.png" />
-	        </div>
-		<div class="mySlidesOct fade">
-		<svg viewBox="0 0 500 200" style="position:absolute;">
-		<path id="sara" d="
-			M 85,73
-			C 85,78	  
-			  185,20	  
-			  275,16" style="fill:transparent;"/>
-		<text class="text gastro" width="100">
-		    <textPath alignment-baseline="top" xlink:href="#sara" style="font-size:18px;">
-			<a href="srod.html">SRod·FitClub</a>
-		    </textPath>
-		</svg>
-		       <img src="img/gal-srod.png">
-		</div>
-		<a class="next" onclick="plusSlidesOct(1)">&#10095;</a>
-		<a class="prev" onclick="plusSlidesOct(-1)">&#10094;</a>
-	    </div>
+		<!-- ==========================
+        CONTACT SECTION
+        =========================== -->
+        <section class="text-center section-padding contact-wrap" id="contact">
+		  <!-- To Top Button -->
+          <a href="index.html#top" class="up-btn"><i class="fa fa-chevron-up"></i></a>
+          <div class="container">
+		    <!-- Headline -->
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">Drop <span>me</span> a line</h1>
+              </div>
+            </div>
+            <div class="row contact-details">
+			  <!-- Adress Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-map-marker"></i><span>Dirección</span></h2>
+                  <p>Montevideo, Uruguay</p>
+                </div>
+              </div>
+			  <!-- Phone Number Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-mobile"></i><span>Teléfono</span></h2>
+                  <p>+598 95501812</p>
+                </div>
+              </div>
+			  <!-- E-Mail Box -->
+              <div class="col-md-4">
+                <div class="dark-box box-hover">
+                  <h2><i class="fa fa-paper-plane"></i><span>Email</span></h2>
+                  <p><a href="index.html#">rodriguezaraima@gmail.com</a></p>
+                </div>
+              </div>
+            </div>
+			      <br>
+			<!-- Social Buttons - use font-awesome, past in what you want -->
+            <div class="row">
+              <div class="col-md-12">
+                <ul class="social-buttons">
+        				  <li><a href="https://www.linkedin.com/in/araima-rodr%C3%ADguez-8884a9195/" target="_blank" class="social-btn"><i class="fa fa-linkedin"></i></a></li><!-- deviantart -->
+        				  <li><a href="https://github.com/arod84" target="_blank" class="social-btn"><i class="fa fa-github"></i></a></li><!-- youtube -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+		<!-- ==========================
+        CONTACT SECTION END
+        =========================== -->
 
-	</div><!--Galeria October-->
-	<div id="woocommerce" class="galcontent">
-		<svg viewBox="0 0 500 200" style="position:absolute;">
-		<path id="checkout" d="
-			M 85,73
-			C 85,78	  
-			  185,20	  
-			  275,16" style="fill:transparent;"/>
-		<text class="text code" width="100">
-		    <textPath alignment-baseline="top" xlink:href="#checkout" style="font-size:21px;">
-			<a href="checkout.html">Checkout</a>
-		    </textPath>
-		</svg>
-            <img src="img/gal-woo.png" />
-	</div>
-	<div id="snippets" class="galcontent">
-		<svg viewBox="0 0 500 200" style="position:absolute;">
-		<path id="code" d="
-			M 105,63
-			C 105,68	  
-			  205,10  
-			  295,6" style="fill:transparent;"/>
-		<text class="text code" width="100">
-		    <textPath alignment-baseline="top" xlink:href="#code" style="font-size:24px;">
-			<a href="https://codepen.io/arod84/">Code</a>
-		    </textPath>
-		</svg>
-            <img src="img/gal-sni.png" />
-        </div><!--Galleries-->
-      </div>
-    </div>
-  </div><!--Seccion 1--Catalogo-->
-  <!--Sección 2-->	
-  <div class="description">
-  </div>
-  <nav>
-    <table class="navbar-links">
-      <tr>
-        <td class="right"><a href="#">Araima Rodríguez</a></td>
-        <td class="left"><a href="https://www.behance.net/rodrigueza12a2">Behance</a></td>
-        <td class="left"><a href="https://github.com/ARod84">GitHub</a></td>
-      <tr>
-    </table>
-  </nav>
-</div>
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+		<!-- ==========================
+        FOOTER SECTION
+        =========================== -->
+        <footer>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <p>All Rights Reserved &copy; 2020</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+		<!-- ==========================
+        FOOTER SECTION END
+        =========================== -->
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  slides[slideIndex-1].style.display = "block";  
-}
 
-//Galeria October
-var slideIndexOct = 1;
-showSlidesOct(slideIndexOct);
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- SmoothScroll -->
+    <script type="text/javascript" src="assets/smoothscroll/smoothscroll.js"></script>
+    <!-- Bootstrap -->
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/waypoints.min.js"></script>
+    <!-- classie.js -->
+	<script src="js/classie.js"></script>
+    <!-- FlexSlider -->
+    <script src="assets/flexslider/jquery.flexslider.js"></script>
+	<!-- Modernizr -->
+    <script src="js/modernizr.js"></script>
+	<!-- Text Rotator -->
+	<script src="assets/textrotator/jquery.simple-text-rotator.js"></script>
+	<!-- Lightbox.js -->
+    <script src="assets/lightbox/js/lightbox.min.js"></script>
+    <!-- Google Maps -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeKBBPJTG3v5w3cNPAgM6ZsJiPyL1mP_o&amp;sensor=false"></script>
+	<!-- Theme JavaScript Core -->
+	<script src="js/main.js"></script>
+	<script src="js/script.js"></script>
 
-function plusSlidesOct(n) {
-  showSlidesOct(slideIndexOct += n);
-}
+	<!-- GOOGLE MAPS DATA -->
+    <script type="text/javascript">
+    // When the window has finished loading create our google map below
+        google.maps.event.addDomListener(window, 'load', init);
 
-function currentSlideOct(n) {
-  showSlidesOct(slideIndexOct = n);
-}
+        function init() {
+            // Basic options for a simple Google Map
+            // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+            var mapOptions = {
+                // How zoomed in you want the map to start at (always required)
+                zoom: 15,
 
-function showSlidesOct(n) {
-  var i;
-  var slidesOct = document.getElementsByClassName("mySlidesOct");
-  if (n > slidesOct.length) {slideIndexOct = 1}    
-  if (n < 1) {slideIndexOct = slidesOct.length}
-  for (i = 0; i < slidesOct.length; i++) {
-      slidesOct[i].style.display = "none";  
-  }
-  slidesOct[slideIndexOct-1].style.display = "block";  
-}
+                scrollwheel: false,
 
-function displayGallery(evt, gal) {
-    var i, galcontent, tablinks;
-    galcontent = document.getElementsByClassName("galcontent");
-    for (i = 0; i < galcontent.length; i++) {
-        galcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("btn");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(gal).style.display = "block";
-    evt.currentTarget.className += " active";
-}
+                // The latitude and longitude to center the map (always required)
+                center: new google.maps.LatLng(40.68961985411178, -74.01618003845215), // New York
 
-document.getElementById("defaultOpen").click();
+                // How you would like to style the map.
+                // This is where you would paste any style found on Snazzy Maps.
+                styles: [	{		featureType:'water',		stylers:[{color:'#F2F2F2'},{visibility:'on'}]	},{		featureType:'landscape',		stylers:[{color:'#FFFFFF'}]	},{		featureType:'road',		stylers:[{saturation:-100},{lightness:45}]	},{		featureType:'road.highway',		stylers:[{visibility:'simplified'}]	},{		featureType:'road.arterial',		elementType:'labels.icon',		stylers:[{visibility:'off'}]	},{		featureType:'administrative',		elementType:'labels.text.fill',		stylers:[{color:'#ADADAD'}]	},{		featureType:'transit',		stylers:[{visibility:'off'}]	},{		featureType:'poi',		stylers:[{visibility:'off'}]	}]
+            };
 
-</script>
+            // Get the HTML DOM element that will contain your map
+            // We are using a div with id="map" seen below in the <body>
+            var mapElement = document.getElementById('googlemaps');
 
-</body>
+            // Create the Google Map using out element and options defined above
+            var map = new google.maps.Map(mapElement, mapOptions);
+        }
+
+    </script>
+
+	<!-- TEXT ROTATOR SETTINGS -->
+    <script type="text/javascript">
+    $(".rotate").textrotator({
+      animation: "fade", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+      separator: ",", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+      speed: 2000 // How many milliseconds until the next word show.
+    });
+    </script>
+
+    </body>
 </html>
